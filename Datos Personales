@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Web Ejercicios en Casa</title>
+  <!-- Agregar enlaces a Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyBkSN1l9+P1AabK41Y5Bf5d4gp3z9TAD6"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      background-color: #615f5f; /* Cambiar el fondo a gris oscuro */
+      color: #000000; /* Cambiar el color del texto a negro */
+      height: 100vh; /* Tamaño en altura al 100% de la ventana */
+      margin: 0; /* Eliminar el margen predeterminado del cuerpo */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+    main {
+      padding: 20px 0;
+      width: 100%;
+      text-align: center; /* Centrar el contenido */
+    }
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .login-container {
+      background-color: #615e5e; /* Cambiar el fondo a blanco */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+      width: 300px; /* Ajustar el ancho del contenedor */
+      margin: 0 auto; /* Centrar el contenedor */
+    }
+    /* Cambiar tamaño del texto a más grande */
+    h1 {
+      font-size: 2em;
+    }
+    /* Estilo para campos de entrada */
+    .form-group {
+      margin-bottom: 15px; /* Espacio entre los campos de entrada */
+    }
+    .form-control {
+      height: 30px; /* Ajustar la altura del campo de entrada */
+      width: 100%;
+    }
+    /* Estilo para el botón */
+    .btn-danger {
+      background-color: #5d0411; /* Color similar al de Facebook */
+      color: #0c0b0b;
+      font-weight: bold;
+      border-radius: 60px; /* Añadir bordes redondeados */
+      height: 40px; /* Ajustar la altura del botón */
+      width: 100%
+    }
+  </style>
+</head>
+<body>
+  <main class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="login-container col-md-8">
+        <!-- Cambiar tamaño del texto a más grande -->
+        <h1 class="text-center mb-4"><strong>Acerca de ti mismo</strong></h1>
+        <form>
+          <!-- Sección Datos Personales -->
+          <h4 class="text-left mb-3"><strong>Datos Personales</strong></h4>
+          <div class="form-group">
+            <label for="usuario" class="sr-only">Usuario:</label>
+            <input type="text" class="form-control" id="usuario" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="edad" class="sr-only">Edad:</label>
+            <input type="text" class="form-control" id="edad" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="genero" class="sr-only">Género:</label>
+            <select class="form-control" id="Género">
+              <option value="Hombre">Seleccione</option>
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+            </select>
+          </div>
+          <h4 class="text-left mb-3"><strong>Datos de Salud</strong></h4>
+          <div class="form-group">
+            <label for="altura" class="sr-only">Altura:</label>
+            <input type="text" class="form-control" id="altura" placeholder="cm">
+          </div>
+          <div class="form-group">
+            <label for="pesoActual" class="sr-only">Peso Actual:</label>
+            <input type="text" class="form-control" id="pesoActual" placeholder="kg">
+          </div>
+          <div class="form-group">
+            <label for="alergia" class="sr-only">Alergia a los Alimentos:</label>
+            <input type="text" class="form-control" id="alergia" placeholder="Información">
+          </div>
+          <div class="form-group">
+            <label for="ejerciciosFrecuentes" class="sr-only">Frecuencia de Ejercicios:</label>
+            <select class="form-control" id="Frecuencia de Ejercicios">
+              <option value="Hombre">Seleccione</option>
+              <option value="1 hora">1 hora</option>
+              <option value="2 horas">2 horas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tipoEjercicio" class="sr-only">Tipo de Ejercicio:</label>
+            <select class="form-control" id="Tipo de Ejercicio">
+              <option value="Hombre">Seleccione</option>
+              <option value="Pecho">Pecho</option>
+              <option value="Piernas">Piernas</option>
+            </select>
+          </div>
+          <h4 class="text-left mb-3"><strong>Medidas</strong></h4>
+          <div class="form-group">
+            <label for="pesoObjetivo" class="sr-only">Peso Objetivo:</label>
+            <input type="text" class="form-control" id="pesoObjetivo" placeholder="kg">
+          </div>
+          <div class="form-group">
+            <label for="medidaCintura" class="sr-only">Medida Cintura:</label>
+            <input type="text" class="form-control" id="medidaCintura" placeholder="cm">
+          </div>
+          <div class="form-group">
+            <label for="medidaCuello" class="sr-only">Medida del Cuello:</label>
+            <input type="text" class="form-control" id="medidaCuello" placeholder="cm">
+          </div>
+          <div class="form-group">
+            <label for="medidaCadera" class="sr-only">Medida de Cadera:</label>
+            <input type="text" class="form-control" id="medidaCadera" placeholder="cm">
+          </div>
+         
+          <!-- Botón de enviar -->
+          <button type="submit" class="btn btn-danger btn-block mt-3">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center fixed-bottom">
+    &copy; 2024 Página Web Ejercicios en Casa
+  </footer>
+  <!-- Agregar enlaces a Bootstrap JS y Popper.js (necesarios para ciertas funcionalidades de Bootstrap) -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMN+6z4nDT5uG/DlTqEloaIrwEaVQeR1WJ6rY3xwD0jnYpJZgUKPCi+bb2a5PQ56"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyBkSN1l9+P1AabK41Y5Bf5d4gp3z9TAD6"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
